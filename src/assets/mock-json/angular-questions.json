@@ -1,0 +1,19 @@
+[
+  {
+    "section": "http",
+    "quesAndAns": [
+      {
+        "id": 1,
+        "question": "What is angular?",
+        "answer": "Angular is a framework",
+        "codeSnippet": true
+      },
+      {
+        "id": 2,
+        "question": "What is http?",
+        "answer": "http is a module in angular",
+        "codeSnippet": true
+      }
+    ]
+  }
+]

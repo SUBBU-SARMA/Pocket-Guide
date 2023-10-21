@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="card col-sm-4 flex mt-4 justify-content-center" style="margin: 0 auto;border-color: #fff;"
+            *ngFor="let sect of techTopics">
+            <p-card header="{{sect.sectionName}}" subheader=" Card Subheader">
+                <!--[style]="{ width: '360px' }"-->
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="" alt="Technology logo" />
+                </ng-template>
+                <p>
+                    Sample
+                </p>
+                <ng-template pTemplate="footer">
+                    <p-button label="Let's Go" icon="pi pi-arrow-circle-right" (onClick)="goTo(sect.section)">
+                    </p-button>
+                </ng-template>
+            </p-card>
+        </div>
+    </div>
+</div>

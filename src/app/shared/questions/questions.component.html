@@ -1,0 +1,16 @@
+<div class="card flex justify-content-center">
+    <p-accordion class="w-full" *ngFor="let eachItem of queAndAns">
+        <p-accordionTab>
+            <ng-template pTemplate="header">
+                <div class="flex align-items-center">
+                    <span class="vertical-align-middle">{{eachItem.question}}</span>
+                </div>
+            </ng-template>
+            <ng-template pTemplate="content">
+                <p class="m-0">
+                    {{eachItem.answer}}
+                </p>
+            </ng-template>
+        </p-accordionTab>
+    </p-accordion>
+</div>
