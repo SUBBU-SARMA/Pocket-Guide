@@ -1,1 +1,34 @@
-<p>html works!</p>
+<ng-template>
+    <ul>
+        <li><u>Underline important text</u></li>
+        <li><i>italicize text</i></li>
+        <li><b>Make the text in bold</b></li>
+        <li><mark>Highlight the text</mark></li>
+        <li><sup>Display the text like suoerscript</sup></li>
+        <li><sub>Display text like subscript</sub></li>
+        <li><em>Emphasize text</em></li>
+        <li><strong>Signify text</strong></li>
+        <li><small>Display text in smaller font</small></li>
+        <li><del>Strike through the text</del></li>
+    </ul>
+</ng-template>
+<div class="container">
+    <div class="row">
+        <div class="card col-sm-4 flex mt-4 justify-content-center" style="margin: 0 auto;border-color: #fff;"
+            *ngFor="let sect of techTopics">
+            <p-card header="{{sect.sectionName}}" subheader=" Card Subheader">
+                <!--[style]="{ width: '360px' }"-->
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="" alt="Technology logo" />
+                </ng-template>
+                <p>
+                    Sample
+                </p>
+                <ng-template pTemplate="footer">
+                    <p-button label="Let's Go" icon="pi pi-arrow-circle-right" (onClick)="goTo(sect.section)">
+                    </p-button>
+                </ng-template>
+            </p-card>
+        </div>
+    </div>
+</div>

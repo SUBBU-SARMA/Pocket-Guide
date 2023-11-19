@@ -1,0 +1,25 @@
+[
+  {
+    "section": "Basic Elements",
+    "quesAndAns": [
+      {
+        "id": 1,
+        "question": "What are Semantic Elements?",
+        "answer": "header, nav, footer, main, section,article,aside",
+        "codeSnippet": true
+      },
+      {
+        "id": 12323323,
+        "question": "What are text formatting tags? and what are various text formatting tags available?",
+        "answer": "Text formatting tags are used to add more meaning and visualization to the text content.",
+        "codeSnippet": true
+      },
+      {
+        "id": 2545464,
+        "question": "What is http?",
+        "answer": "http is a module in angular",
+        "codeSnippet": true
+      }
+    ]
+  }
+]

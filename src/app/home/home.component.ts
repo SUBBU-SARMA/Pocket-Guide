@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
     {
       id: 3,
       technologyName: 'HTML/HTML5',
-      routePath: ''
+      routePath: 'html'
     },
     {
       id: 4,
