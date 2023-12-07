@@ -13,20 +13,18 @@ export class HtmlComponent implements OnInit {
   techTopics: techTopics[] = [
     {
       id: 1,
-      sectionName: 'HTML Basic Elements',
-      section: 'BasicElements'
+      sectionName: 'HTML Basic Elements'
     },
     {
       id: 2,
-      sectionName: 'Routing',
-      section: 'routing'
+      sectionName: 'Routing'
     }
   ];
   ngOnInit() {
     this.sharedService.items = [{ label: 'HTML', routerLink: '/html' }];
   }
   goTo(section: any) {
-    this.sharedService.items = [{ label: 'Angular', routerLink: '/angular' }, { label: section }];
+    this.sharedService.items = [{ label: 'HTML', routerLink: '/html' }, { label: section }];
     this.router.navigate(['questions']);
   }
 }

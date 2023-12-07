@@ -31,6 +31,11 @@ export class HomeComponent implements OnInit {
       id: 4,
       technologyName: 'CSS/CSS3',
       routePath: ''
+    },
+    {
+      id: 5,
+      technologyName: 'DSA',
+      routePath: 'dsa'
     }
   ];
   ngOnInit() {

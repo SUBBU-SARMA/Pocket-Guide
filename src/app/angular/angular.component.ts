@@ -12,13 +12,11 @@ export class AngularComponent implements OnInit {
   techTopics: techTopics[] = [
     {
       id: 1,
-      sectionName: 'HTTP',
-      section: 'http'
+      sectionName: 'HTTP'
     },
     {
       id: 2,
-      sectionName: 'Routing',
-      section: 'routing'
+      sectionName: 'Routing'
     }
   ];
 

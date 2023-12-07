@@ -9,11 +9,11 @@ export interface technologyItem {
 }
 export interface techTopics {
     id: number,
-    sectionName: string,
-    section: string
+    sectionName: string
 }
 export interface queAndAnsItem {
-    id: number,
+    id: string,
     question: string,
-    answer: string
+    answer: string,
+    codeSnippet: boolean
 }

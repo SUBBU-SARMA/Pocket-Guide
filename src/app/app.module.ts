@@ -1,6 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +24,7 @@ import { CssComponent } from './css/css.component';
 import { JavascriptComponent } from './javascript/javascript.component';
 import { QuestionsComponent } from './shared/questions/questions.component';
 import { BreadcrumbComponent } from './shared/breadcrumb/breadcrumb.component';
+import { DsaComponent } from './dsa/dsa.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { BreadcrumbComponent } from './shared/breadcrumb/breadcrumb.component';
     CssComponent,
     JavascriptComponent,
     QuestionsComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    DsaComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,8 @@ import { BreadcrumbComponent } from './shared/breadcrumb/breadcrumb.component';
     ButtonModule,
     DividerModule,
     BreadcrumbModule,
-    AccordionModule
+    AccordionModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
