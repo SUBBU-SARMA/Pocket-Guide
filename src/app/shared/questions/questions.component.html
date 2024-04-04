@@ -1,5 +1,5 @@
 <div class="card flex justify-content-center">
-    <p-accordion class="w-full" *ngFor="let eachItem of quesAndAns">
+    <p-accordion class="w-full" *ngFor="let eachItem of quesAndAns; let i = index">
         <p-accordionTab>
             <ng-template pTemplate="header">
                 <div class="flex align-items-center">
@@ -14,3 +14,20 @@
         </p-accordionTab>
     </p-accordion>
 </div>
+<!-- <ng-template #math1>
+    <p>math1 test</p>
+    <!-- <code>This is sample js code 
+        var plusOne = function (digits) {
+            let strNum;
+            digits.forEach((el) => {
+              strNum += el.toString();
+            });
+            console.log(strNum);
+          };
+          
+          plusOne([1, 2, 3]);          
+    </code> -->
+<!--</ng-template>
+<pre class="m-0" *ngIf="eachItem.codeSnippet">
+    <ng-container *ngTemplateOutlet="math1"></ng-container>
+</pre> -->

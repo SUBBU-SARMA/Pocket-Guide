@@ -1,0 +1,27 @@
+<div class="card flex justify-content-center">
+    <p-accordion class="w-full" *ngFor="let eachItem of quesAndAns; let i = index">
+        <p-accordionTab>
+            <ng-template pTemplate="header">
+                <div class="flex align-items-center">
+                    <span class="vertical-align-middle">{{eachItem.question}}</span>
+                </div>
+            </ng-template>
+            <ng-template pTemplate="content">
+                <div *ngFor="let item of eachItem.answer | keyvalue">
+                    <h3>{{item.key}}</h3>
+                    <app-answers [answers]="item.value"></app-answers>
+                    <!-- <p class="m-0">
+                        <h3>{{item.key}}</h3>
+                        <!-- <div>
+                            <ol>
+                                <li *ngFor="let step of item.value">
+                                    {{step}}
+                                </li>
+                            </ol>
+                        </div>
+                    </p> -->
+                </div>
+            </ng-template>
+        </p-accordionTab>
+    </p-accordion>
+</div>

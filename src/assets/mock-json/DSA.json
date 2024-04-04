@@ -5,19 +5,23 @@
       {
         "id": "math1",
         "question": "Pseudo code to reverse a integer",
-        "answer": "",
+        "answer": {},
         "codeSnippet": true
       },
       {
-        "id": 12323323,
+        "id": "math2",
         "question": "What are text formatting tags? and what are various text formatting tags available?",
-        "answer": "Text formatting tags are used to add more meaning and visualization to the text content.",
+        "answer": { 
+            "test": ["Text formatting tags are used to add more meaning and visualization to the text content."]
+      },
         "codeSnippet": true
       },
       {
-        "id": 2545464,
+        "id": "math3",
         "question": "What is http?",
-        "answer": "http is a module in angular",
+        "answer": { 
+            "test": ["Text formatting tags are used to add more meaning and visualization to the text content."]
+      },
         "codeSnippet": true
       }
     ]
@@ -28,7 +32,12 @@
       {
         "id": 1,
         "question": "What are Semantic Elements?",
-        "answer": "header, nav, footer, main, section,article,aside",
+        "answer": { 
+            "test": [
+              "Text formatting tags are used to add more meaning and visualization to the text content.",
+              "Sample text"
+          ]
+      },
         "codeSnippet": true
       }
     ]

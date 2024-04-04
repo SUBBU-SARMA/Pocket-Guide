@@ -25,6 +25,8 @@ import { JavascriptComponent } from './javascript/javascript.component';
 import { QuestionsComponent } from './shared/questions/questions.component';
 import { BreadcrumbComponent } from './shared/breadcrumb/breadcrumb.component';
 import { DsaComponent } from './dsa/dsa.component';
+import { NoCodeQuestionsComponent } from './shared/no-code-questions/no-code-questions.component';
+import { AnswersComponent } from './shared/answers/answers.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { DsaComponent } from './dsa/dsa.component';
     JavascriptComponent,
     QuestionsComponent,
     BreadcrumbComponent,
-    DsaComponent
+    DsaComponent,
+    NoCodeQuestionsComponent,
+    AnswersComponent
   ],
   imports: [
     BrowserModule,

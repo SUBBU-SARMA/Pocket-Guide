@@ -25,6 +25,6 @@ export class DsaComponent {
   }
   goTo(sectionName: any) {
     this.sharedService.items = [{ label: 'DSA', routerLink: '/dsa' }, { label: sectionName }];
-    this.router.navigate(['questions'], { queryParams: { subject: 'dsa', section: sectionName } });
+    this.router.navigate(['nocodequestions'], { queryParams: { subject: 'dsa', section: sectionName } });
   }
 }

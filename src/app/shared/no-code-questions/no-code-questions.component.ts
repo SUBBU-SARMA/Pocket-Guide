@@ -2,12 +2,13 @@ import { Component, Input, OnInit, TemplateRef, ViewChild } from '@angular/core'
 import { ActivatedRoute } from '@angular/router';
 import { queAndAnsItem } from 'src/app/core/models/home';
 import { HttpService } from '../services/http.service';
+
 @Component({
-  selector: 'app-questions',
-  templateUrl: './questions.component.html',
-  styleUrls: ['./questions.component.scss']
+  selector: 'app-no-code-questions',
+  templateUrl: './no-code-questions.component.html',
+  styleUrls: ['./no-code-questions.component.scss']
 })
-export class QuestionsComponent implements OnInit {
+export class NoCodeQuestionsComponent {
   subject!: string | null;
   section!: string | null;
   url!: string;
@@ -38,7 +39,9 @@ export class QuestionsComponent implements OnInit {
     //   this.templates.set('template' + item.id, this.templateRef);
     // }
   }
-
+  isArray(value: any): value is Array<any> {
+    return value instanceof Array;
+  }
   getSubjectData() {
     switch (this.subject) {
       case 'dsa':
