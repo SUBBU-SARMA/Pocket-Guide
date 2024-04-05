@@ -10,13 +10,16 @@
                 <p class="m-0">
                     {{eachItem.answer}}
                 </p>
+                <pre class="m-0" *ngIf="eachItem.codeSnippet">
+                    <ng-container *ngTemplateOutlet="eachItem.refId"></ng-container>
+                </pre>
             </ng-template>
         </p-accordionTab>
     </p-accordion>
 </div>
-<!-- <ng-template #math1>
+<ng-template #math1>
     <p>math1 test</p>
-    <!-- <code>This is sample js code 
+      <!-- <code>This is sample js code 
         var plusOne = function (digits) {
             let strNum;
             digits.forEach((el) => {
@@ -27,7 +30,4 @@
           
           plusOne([1, 2, 3]);          
     </code> -->
-<!--</ng-template>
-<pre class="m-0" *ngIf="eachItem.codeSnippet">
-    <ng-container *ngTemplateOutlet="math1"></ng-container>
-</pre> -->
+</ng-template>

@@ -8,7 +8,7 @@
             </ng-template>
             <ng-template pTemplate="content">
                 <div *ngFor="let item of eachItem.answer | keyvalue">
-                    <h3>{{item.key}}</h3>
+                    <h3>{{item.key}} :</h3>
                     <app-answers [answers]="item.value"></app-answers>
                     <!-- <p class="m-0">
                         <h3>{{item.key}}</h3>

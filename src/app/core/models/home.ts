@@ -1,3 +1,5 @@
+import { TemplateRef } from "@angular/core"
+
 export interface Home {
 
 
@@ -13,6 +15,7 @@ export interface techTopics {
 }
 export interface queAndAnsItem {
     id: string,
+    refId?: any,
     question: string,
     answer: string,
     codeSnippet: boolean

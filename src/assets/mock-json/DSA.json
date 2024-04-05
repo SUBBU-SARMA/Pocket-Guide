@@ -4,6 +4,7 @@
     "quesAndAns": [
       {
         "id": "math1",
+        "refId": "math1",
         "question": "Pseudo code to reverse a integer",
         "answer": {},
         "codeSnippet": true
@@ -31,14 +32,23 @@
     "quesAndAns": [
       {
         "id": 1,
-        "question": "What are Semantic Elements?",
+        "question": "Given a number 'N', Calculate the no of factors of N?",
         "answer": { 
-            "test": [
-              "Text formatting tags are used to add more meaning and visualization to the text content.",
-              "Sample text"
-          ]
+            "Approach 1": [
+              "Take min value as 1, max value as N and Iterate from 1 to N",
+              "Inside the for loop, Count the numbers which divide the N",
+              "Note: Lets Assume for 1 sec 10^8 operations are done, So If N = 10^8 It requires 1 sec for the operation. Now if N is 10^18, It will take 317 Years approx to calculate the factors, Thats why we need DSA"
+          ],
+            "Approach 2": [
+              "f1 * f2 = N, where f1 <= f2",
+              "So f2 is always <= √N",
+              "Count or Find all the f1 and f2 values by iterating upto √N",
+              "Note: now the range is not 1-N, its 1-√N"
+            ]
+            
+            
       },
-        "codeSnippet": true
+        "codeSnippet": false
       }
     ]
   }

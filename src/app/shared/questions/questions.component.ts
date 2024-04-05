@@ -11,7 +11,7 @@ export class QuestionsComponent implements OnInit {
   subject!: string | null;
   section!: string | null;
   url!: string;
- // @ViewChild('math1') math1: TemplateRef<any>;
+  @ViewChild('math1') math1: any;
   // templates = new Map<string, TemplateRef<any>>();
   constructor(private route: ActivatedRoute, private httpService: HttpService) { }
   quesAndAns: queAndAnsItem[] = [];
