@@ -1,5 +1,38 @@
 [
   {
+    "section": "Generic",
+    "quesAndAns": [
+      {
+        "id": "Generic1",
+        "refId": "",
+        "question": "Between A and B Algorithms, On What parameters can we decide which one is better?",
+        "answer": {
+          "Answer" : [
+            "By calculating the number of Iterations",
+            "Not on the basis of execution time as it depends on multiple factors like OS, Version of OS and RAM, Programming Language etc."
+          ]
+        },
+        "codeSnippet": false
+      },
+      {
+        "id": "math2",
+        "question": "What are text formatting tags? and what are various text formatting tags available?",
+        "answer": { 
+            "test": ["Text formatting tags are used to add more meaning and visualization to the text content."]
+      },
+        "codeSnippet": true
+      },
+      {
+        "id": "math3",
+        "question": "What is http?",
+        "answer": { 
+            "test": ["Text formatting tags are used to add more meaning and visualization to the text content."]
+      },
+        "codeSnippet": true
+      }
+    ]
+  },
+  {
     "section": "MATH",
     "quesAndAns": [
       {
@@ -34,19 +67,31 @@
         "id": 1,
         "question": "Given a number 'N', Calculate the no of factors of N?",
         "answer": { 
-            "Approach 1": [
+            "Approach 1 (Naive)": [
               "Take min value as 1, max value as N and Iterate from 1 to N",
               "Inside the for loop, Count the numbers which divide the N",
               "Note: Lets Assume for 1 sec 10^8 operations are done, So If N = 10^8 It requires 1 sec for the operation. Now if N is 10^18, It will take 317 Years approx to calculate the factors, Thats why we need DSA"
           ],
-            "Approach 2": [
+            "Approach 2 (Optimal)": [
               "f1 * f2 = N, where f1 <= f2",
               "So f2 is always <= √N",
               "Count or Find all the f1 and f2 values by iterating upto √N",
               "Note: now the range is not 1-N, its 1-√N"
             ]
-            
-            
+      },
+        "codeSnippet": false
+      },
+      {
+        "id": 2,
+        "question": "Check if number N is a Prime Number",
+        "answer": { 
+            "Approach 1": [
+             "Find the factors of number N",
+             "Check if the count is 2"
+            ],
+            "Approach 2 (Optimal)": [
+              "Excluding 1, upto √N check if any number divides N"
+            ]
       },
         "codeSnippet": false
       }
