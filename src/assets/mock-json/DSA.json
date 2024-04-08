@@ -8,25 +8,37 @@
         "question": "Between A and B Algorithms, On What parameters can we decide which one is better?",
         "answer": {
           "Answer" : [
+            "We wont go on the basis of execution time as it depends on multiple factors like OS, Version of OS and RAM, Programming Language etc.",
             "By calculating the number of Iterations",
-            "Not on the basis of execution time as it depends on multiple factors like OS, Version of OS and RAM, Programming Language etc."
-          ]
+            "Plot the graphs of two Time complexcities to find out until the meeting point which one is better",
+            "For larger Input it does not work, So we will go for asymptotic analysis to monitor performance of algorithms like: Big(O), Omega, Theta"
+            ]
         },
         "codeSnippet": false
       },
       {
-        "id": "math2",
-        "question": "What are text formatting tags? and what are various text formatting tags available?",
+        "id": "Generic2",
+        "question": "How do you calculate Big(O)?",
         "answer": { 
-            "test": ["Text formatting tags are used to add more meaning and visualization to the text content."]
+            "test": [
+              "Calculate the no of Iterations",
+              "Neglect lower order degree term",
+              "Neglect constant coefficient term",
+              "Order of priority: logx < √x < x < xlogx < x√x < x^2"
+          ]
       },
         "codeSnippet": true
       },
       {
-        "id": "math3",
-        "question": "What is http?",
+        "id": "Generic3",
+        "question": "Explain space complexity?",
         "answer": { 
-            "test": ["Text formatting tags are used to add more meaning and visualization to the text content."]
+            "test": [
+              "Amount of extra space occupied by an algorithm",
+              "space other than input space",
+              "Variables, Conditional Statements, return statements, switch case all take O(1) Space complexity and Time complexity",
+              "Note: time complexity is always more important than space complexity"
+            ]
       },
         "codeSnippet": true
       }
